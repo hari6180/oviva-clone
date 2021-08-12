@@ -1,7 +1,14 @@
 import "./app.css";
+import Footer from "./components/footer/footer";
+import Navbar from "./components/navbar/navbar";
 
 function App() {
-  return <h1>Hello! </h1>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
