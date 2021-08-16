@@ -132,7 +132,7 @@ const Main = (props) => {
           <div>
             <input type="text" placeholder="Name*"></input>
             <input type="email" placeholder="E-mail*"></input>
-            <input type="phone" placeholder="Phone number*"></input>
+            <input type="tel" placeholder="Phone number*"></input>
             <select name="want_type">
               <option value="programme">I want to join a programme</option>
               <option value="service">I want to commission a service</option>
