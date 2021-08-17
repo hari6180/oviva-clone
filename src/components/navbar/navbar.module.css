@@ -34,11 +34,11 @@
   margin-left: 0.375em;
 }
 
-.menu li:hover {
+.menu li a:hover {
   color: ovivaMint;
 }
 
-.menu li:hover .sub_menu {
+.menu li a:hover .sub_menu {
   opacity: 100;
   color: ovivaLightGrey;
 }
@@ -77,6 +77,10 @@
 
 .search_input {
   border: none;
+}
+
+.search_input:focus-visible {
+  outline: none;
 }
 
 .search_input::placeholder {

@@ -46,16 +46,10 @@ const Navbar = (props) => {
           </li>
         </ul>
         <form className={styles.search_box} role="search" method="get" action="https://oviva.com/">
-          <label class="screen-reader-text" for="s">
+          <label className="screen-reader-text" htmlFor="s">
             <img className={styles.search_icon} src="/img/search-new.png" alt="search_icon" />
           </label>
-          <input
-            className={styles.search_input}
-            type="search"
-            value=""
-            name="s"
-            placeholder="Search"
-          />
+          <input className={styles.search_input} type="search" name="s" placeholder="Search" />
         </form>
       </div>
     </nav>
