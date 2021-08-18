@@ -1,0 +1,15 @@
+@value ovivaLightGrey,ovivaGrey,ovivaMint from '../../common/colors.css';
+
+.main {
+  width: 100%;
+}
+
+.intro {
+  background-color: ovivaMint;
+  display: flex;
+  width: 100%;
+}
+
+.intro__background {
+  min-width: 50%;
+}

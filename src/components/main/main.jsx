@@ -1,16 +1,20 @@
 import React from "react";
+import styles from "./main.module.css";
 import Button from "../button/button";
 
 const Main = (props) => {
   return (
-    <main>
-      <section>
-        <h1>Take control and change for good with Oviva.</h1>
-        <p>
-          We have helped over 100,000 people gain confidence and keep new healthy habits long term.
-        </p>
-        <img src="img/home-header.jpg" alt="happy-woman" />
-        <Button />
+    <main className={styles.main}>
+      <section className={styles.intro}>
+        <div className={styles.intro__background}>
+          <h1 className={styles.intro__title}>Take control and change for good with Oviva.</h1>
+          <p className={styles.intro__para}>
+            We have helped over 100,000 people gain confidence and keep new healthy habits long
+            term.
+          </p>
+          <Button />
+        </div>
+        <img className={styles.intro__img} src="img/home-header.jpg" alt="happy-woman" />
       </section>
       <section>
         <img src="img/diagnose.svg" alt="happy-woman" />
