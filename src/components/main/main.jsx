@@ -6,13 +6,15 @@ const Main = (props) => {
   return (
     <main className={styles.main}>
       <section className={styles.intro}>
-        <div className={styles.intro__background}>
-          <h1 className={styles.intro__title}>Take control and change for good with Oviva.</h1>
-          <p className={styles.intro__para}>
-            We have helped over 100,000 people gain confidence and keep new healthy habits long
-            term.
-          </p>
-          <Button />
+        <div className={styles.intro__background_wrap}>
+          <div className={styles.intro__background}>
+            <h1 className={styles.intro__title}>Take control and change for good with Oviva.</h1>
+            <p className={styles.intro__para}>
+              We have helped over 100,000 people gain confidence and keep new healthy habits long
+              term.
+            </p>
+            <Button />
+          </div>
         </div>
         <img className={styles.intro__img} src="img/home-header.jpg" alt="happy-woman" />
       </section>
