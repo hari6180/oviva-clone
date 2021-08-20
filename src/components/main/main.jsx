@@ -9,7 +9,7 @@ const Main = (props) => {
         <div className={styles.intro__background_wrap}>
           <div className={styles.intro__background}>
             <h1 className={styles.intro__title}>Take control and change for good with Oviva.</h1>
-            <p className={styles.intro__para}>
+            <p className={styles.intro__desc}>
               We have helped over 100,000 people gain confidence and keep new healthy habits long
               term.
             </p>
@@ -18,13 +18,17 @@ const Main = (props) => {
         </div>
         <img className={styles.intro__img} src="img/home-header.jpg" alt="happy-woman" />
       </section>
-      <section>
-        <img src="img/diagnose.svg" alt="happy-woman" />
-        <h1>How it works</h1>
-        <p>
-          Get support to change your behaviour for the better with personalised expert care at home,
-          at a time that works for you.
-        </p>
+      <section className={styles.works}>
+        <div className={styles.works__wrap_img}>
+          <img className={styles.works__img} src="img/diagnose.svg" alt="diagnose" />
+        </div>
+        <div className={styles.works__wrap_text}>
+          <h1 className={styles.works__title}>How it works</h1>
+          <p className={styles.works__desc}>
+            Get support to change your behaviour for the better with personalised expert care at
+            home, at a time that works for you.
+          </p>
+        </div>
       </section>
       <section>
         <img src="img/clive.jpg" alt="client" />

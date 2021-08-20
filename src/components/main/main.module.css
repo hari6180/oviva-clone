@@ -1,4 +1,4 @@
-@value ovivaLightGrey,ovivaGrey,ovivaMint,ovivaWhite from '../../common/colors.css';
+@value ovivaLightGrey,ovivaGrey,ovivaMint,ovivaWhite,ovivaDarkBlue from '../../common/colors.css';
 
 .main {
   width: 100%;
@@ -29,7 +29,7 @@
   margin-bottom: 0;
 }
 
-.intro__para {
+.intro__desc {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5em;
@@ -38,4 +38,39 @@
 
 .intro__img {
   width: 50%;
+}
+
+.works {
+  display: flex;
+  padding: 60px 0;
+  background-color: #c8eae5;
+}
+
+.works__wrap_img,
+.works__wrap_text {
+  width: 50%;
+}
+
+.works__wrap_img {
+  text-align: center;
+}
+
+.works__wrap_text {
+  color: ovivaDarkBlue;
+}
+
+.works__title {
+  font-size: 2.8em;
+  line-height: 1.3em;
+  font-weight: bold;
+  max-width: 600px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.works__desc {
+  max-width: 90%;
+  font-weight: 100;
+  font-size: 1.125em;
+  margin-top: 0;
 }
