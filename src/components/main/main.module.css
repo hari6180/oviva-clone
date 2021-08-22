@@ -74,3 +74,42 @@
   font-size: 1.125em;
   margin-top: 0;
 }
+
+.review {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.review__img_wrap {
+  padding-right: 70px;
+}
+
+.review__img {
+  width: 100%;
+}
+
+.review__text_wrap {
+  max-width: 600px;
+  padding-top: 130px;
+}
+
+.review__title {
+  color: ovivaMint;
+  font-size: 2.125em;
+  padding-bottom: 20px;
+  margin: 0 0 10px;
+}
+
+.review__text {
+  color: ovivaGrey;
+  font-size: 1em;
+  font-weight: 820;
+  line-height: 1.3em;
+}
+
+.review__bio {
+  color: ovivaGrey;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.3em;
+}

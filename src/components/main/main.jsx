@@ -30,29 +30,34 @@ const Main = (props) => {
           </p>
         </div>
       </section>
-      <section>
-        <img src="img/clive.jpg" alt="client" />
-        <h2>Clive's story</h2>
-        <p>
-          <q>
-            <em>
-              Over the first period of 12 weeks I lost about 2.5 stone. If you can get through the
-              first hard few weeks (like with anything!) - the benefits are great, it really did
-              help. I didn’t have the urge to eat more which was a concern I had, that I’d still be
-              hungry. The key thing is the support from the dietitian. They provide back up through
-              the early stages. There is no embarrassment, everything is confidential and the chat
-              on the app is great, anything you are thinking about you can get feedback on. My life
-              has changed completely. I can ride 80 miles a day and feel great! I have no injuries
-              due to losing weight, and will cycle up to 180 miles a week. Now I’ve seen the
-              benefits I don’t want to go back to how I was feeling before.
-            </em>
-          </q>
-        </p>
-        <p>
-          When Clive, 60, from Birmingham started Oviva Diabetes Remission he was recently retired,
-          spending lots of time sitting down and was on 5 medications a day. He is now
-          medications-free and is cycling up to 80 miles a day!
-        </p>
+      <section className={styles.review}>
+        <div className={styles.review__img_wrap}>
+          <img className={styles.review__img} src="img/clive.jpg" alt="client" />
+        </div>
+        <div className={styles.review__text_wrap}>
+          <h2 className={styles.review__title}>Clive's story</h2>
+          <p className={styles.review__text}>
+            <q>
+              <em>
+                Over the first period of 12 weeks I lost about 2.5 stone. If you can get through the
+                first hard few weeks (like with anything!) - the benefits are great, it really did
+                help. I didn’t have the urge to eat more which was a concern I had, that I’d still
+                be hungry. The key thing is the support from the dietitian. They provide back up
+                through the early stages. There is no embarrassment, everything is confidential and
+                the chat on the app is great, anything you are thinking about you can get feedback
+                on. My life has changed completely. I can ride 80 miles a day and feel great! I have
+                no injuries due to losing weight, and will cycle up to 180 miles a week. Now I’ve
+                seen the benefits I don’t want to go back to how I was feeling before.
+              </em>
+            </q>
+          </p>
+          <p className={styles.review__bio}>
+            When Clive, 60, from Birmingham started Oviva Diabetes Remission he was recently
+            retired, spending lots of time sitting down and was on 5 medications a day. He is now
+            medications-free and is cycling up to 80 miles a day!
+          </p>
+          <Button />
+        </div>
       </section>
       <section>
         <img src="img/map.png" alt="map" />
