@@ -113,3 +113,52 @@
   font-weight: 700;
   line-height: 1.3em;
 }
+
+.location {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #edf0f3;
+}
+
+.location__img_wrap {
+  padding: 50px;
+}
+
+.location__img {
+  width: 100%;
+}
+
+.location__text_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location__title {
+  font-size: 2.8em;
+  color: ovivaMint;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.location__text {
+  font-family: "Helvetica Neue Light";
+  font-weight: 300;
+  font-size: 1.125em;
+  margin-top: 0;
+  padding-bottom: 30px;
+  color: ovivaDarkBlue;
+  max-width: 90%;
+}
+
+.location__text2 {
+  font-family: "Helvetica Neue Light";
+  font-weight: 300;
+  font-size: 1.125em;
+  margin-top: 0;
+  padding-bottom: 30px;
+  color: ovivaDarkBlue;
+  max-width: 90%;
+  margin-bottom: 0;
+}

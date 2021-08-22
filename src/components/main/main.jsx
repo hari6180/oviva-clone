@@ -59,16 +59,23 @@ const Main = (props) => {
           <Button />
         </div>
       </section>
-      <section>
-        <img src="img/map.png" alt="map" />
-        <h1>We are UK-wide!</h1>
-        <p>
-          We’re proud to be an NHS service provider as part of the Healthier You National Diabetes
-          Prevention programme, the NHS Low Calorie Diet Programme, and the brand new NHS Weight
-          Management Programme.
-        </p>
-        <p>participants can be referred by their GP and in some areas they can sign up directly.</p>
-        <Button />
+      <section className={styles.location}>
+        <div className={styles.location__img_wrap}>
+          <img className={styles.location__img} src="img/map.png" alt="map" />
+        </div>
+        <div className={styles.location__text_wrap}>
+          <h1 className={styles.location__title}>We are UK-wide!</h1>
+          <p className={styles.location__text}>
+            We’re proud to be an NHS service provider as part of the Healthier You National Diabetes
+            Prevention programme, the NHS Low Calorie Diet Programme, and the brand new NHS Weight
+            Management Programme.
+          </p>
+          <p className={styles.location__text2}>
+            Our programmes are also available for free in 39 NHS regions throughout the UK, eligible
+            participants can be referred by their GP and in some areas they can sign up directly.
+          </p>
+          <Button />
+        </div>
       </section>
       <section>
         <h2>What makes us different</h2>
