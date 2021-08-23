@@ -246,3 +246,18 @@
   margin: 0;
   padding-bottom: 30px;
 }
+
+.ask {
+  background-color: #d1ede9;
+  padding: 30px 94px 62px 94px;
+}
+
+.ask__title {
+  font-family: "Helvetica Neue";
+  margin-top: 32px;
+  margin-bottom: 0;
+  color: ovivaMint;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 1.3em;
+}

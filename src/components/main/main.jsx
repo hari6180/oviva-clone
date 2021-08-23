@@ -168,8 +168,8 @@ const Main = (props) => {
           <Button />
         </div>
       </section>
-      <section>
-        <h1>Still have questions?</h1>
+      <section className={styles.ask}>
+        <h1 className={styles.ask__title}>Still have questions?</h1>
         <Button />
       </section>
       <section>
