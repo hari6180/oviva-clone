@@ -77,49 +77,73 @@ const Main = (props) => {
           <Button />
         </div>
       </section>
-      <section>
-        <h2>What makes us different</h2>
-        <div className="image__container">
-          <div className="image__items">
-            <div className="image__item">
-              <img src="img/NHS-logo-square.png" alt="NHS-logo" />
-              <span>As a proud NHS provider, our programmes are free of charge</span>
+      <section className={styles.special}>
+        <h2 className={styles.special__title}>What makes us different</h2>
+        <div className={styles.special__container}>
+          <div className={styles.special__img_wrap}>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/NHS-logo-square.png" alt="NHS-logo" />
+              <span className={styles.special__text}>
+                As a proud NHS provider, our programmes are free of charge
+              </span>
             </div>
-            <div>
-              <img src="img/hand.svg" alt="hand" />
-              <span>97% of people on our programmes recommend us</span>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/hand.svg" alt="hand" />
+              <span className={styles.special__text}>
+                97% of people on our programmes recommend us
+              </span>
             </div>
-            <div>
-              <img src="img/star.svg" alt="star" />
-              <span>We’ve had over 94,000 app downloads</span>
-            </div>
-          </div>
-          <div className="image__items">
-            <div className="image__item">
-              <img src="img/Log-waist-circumference.svg" alt="Log-waist-circumference" />
-              <span>On average, people lose 9lbs on their programme</span>
-            </div>
-            <div>
-              <img src="img/blood-glucose.svg" alt="blood-glucose" />
-              <span>On average, people improve their blood glucose levels by 11.7mmol/mol</span>
-            </div>
-            <div>
-              <img src="img/talk.svg" alt="talk" />
-              <span>Nearly 1 in 4 achieve remission of their Type 2 diabetes</span>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/star.svg" alt="star" />
+              <span className={styles.special__text}>We’ve had over 94,000 app downloads</span>
             </div>
           </div>
-          <div className="image__items">
-            <div className="image__item">
-              <img src="img/coach.svg" alt="coach" />
-              <span>Our programmes are designed and delivered by health care experts</span>
+          <div className={styles.special__img_wrap}>
+            <div className={styles.special__imgs}>
+              <img
+                className={styles.special__img}
+                src="img/Log-waist-circumference.svg"
+                alt="Log-waist-circumference"
+              />
+              <span className={styles.special__text}>
+                On average, people lose 9lbs on their programme
+              </span>
             </div>
-            <div>
-              <img src="img/food.svg" alt="food" />
-              <span>We’ll pair you with a coach for support unique to your health</span>
+            <div className={styles.special__imgs}>
+              <img
+                className={styles.special__img}
+                src="img/blood-glucose.svg"
+                alt="blood-glucose"
+              />
+              <span className={styles.special__text}>
+                On average, people improve their blood glucose levels by 11.7mmol/mol
+              </span>
             </div>
-            <div>
-              <img src="img/book.svg" alt="book" />
-              <span>Our care is delivered in over 22 languages</span>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/talk.svg" alt="talk" />
+              <span className={styles.special__text}>
+                Nearly 1 in 4 achieve remission of their Type 2 diabetes
+              </span>
+            </div>
+          </div>
+          <div className={styles.special__img_wrap}>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/coach.svg" alt="coach" />
+              <span className={styles.special__text}>
+                Our programmes are designed and delivered by health care experts
+              </span>
+            </div>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/food.svg" alt="food" />
+              <span className={styles.special__text}>
+                We’ll pair you with a coach for support unique to your health
+              </span>
+            </div>
+            <div className={styles.special__imgs}>
+              <img className={styles.special__img} src="img/book.svg" alt="book" />
+              <span className={styles.special__text}>
+                Our care is delivered in over 22 languages
+              </span>
             </div>
           </div>
         </div>
