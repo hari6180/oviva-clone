@@ -172,26 +172,33 @@ const Main = (props) => {
         <h1 className={styles.ask__title}>Still have questions?</h1>
         <Button />
       </section>
-      <section>
-        <h1>Get in touch</h1>
-        <p>
-          We look forward to hearing from you and one of our friendly team will be in touch as soon
-          as we can.
-        </p>
-        <form>
-          <div>
-            <input type="text" placeholder="Name*"></input>
-            <input type="email" placeholder="E-mail*"></input>
-            <input type="tel" placeholder="Phone number*"></input>
-            <select name="want_type">
+      <section className={styles.contact}>
+        <div className={styles.contact__text_wrap}>
+          <h1 className={styles.contact_title}>Get in touch</h1>
+          <p className={styles.contact_text}>
+            We look forward to hearing from you and one of our friendly team will be in touch as
+            soon as we can.
+          </p>
+        </div>
+        <form className={styles.contact__form}>
+          <div className={styles.contact__inputs}>
+            <input className={styles.contact__input} type="text" placeholder="Name*"></input>
+            <input className={styles.contact__input} type="email" placeholder="E-mail*"></input>
+            <input className={styles.contact__input} type="tel" placeholder="Phone number*"></input>
+            <select className={styles.contact__select} name="want_type">
               <option value="programme">I want to join a programme</option>
               <option value="service">I want to commission a service</option>
             </select>
           </div>
-          <div>
-            <input type="message" placeholder="Message*"></input>
+          <div className={styles.contact__inputs}>
+            <textarea
+              className={styles.contact__input}
+              cols="40"
+              rows="10"
+              placeholder="Message*"
+            ></textarea>
+            <button className={styles.contact__button}>Submit</button>
           </div>
-          <button>Submit</button>
         </form>
       </section>
     </main>
