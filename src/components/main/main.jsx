@@ -148,21 +148,25 @@ const Main = (props) => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.app}>
         {/* img will be changed! */}
-        <img src="img/app-280x536.png" alt="mobile_app" />
-        <h1>Our technology</h1>
-        <p>
-          <strong>
-            We combine personalised support from an expert health care professional with our unique
-            digital tools: the Oviva app and Oviva Learn.
-          </strong>
-        </p>
-        <p>
-          This blended approach will support you to make manageable changes that can improve your
-          health and wellbeing even after the programme has ended.
-        </p>
-        <Button />
+        <div className={styles.app__img_wrap}>
+          <img className={styles.app__img} src="img/app-280x536.png" alt="mobile_app" />
+        </div>
+        <div className={styles.app__text_wrap}>
+          <h1 className={styles.app__title}>Our technology</h1>
+          <p className={styles.app__text}>
+            <strong>
+              We combine personalised support from an expert health care professional with our
+              unique digital tools: the Oviva app and Oviva Learn.
+            </strong>
+          </p>
+          <p className={styles.app__text2}>
+            This blended approach will support you to make manageable changes that can improve your
+            health and wellbeing even after the programme has ended.
+          </p>
+          <Button />
+        </div>
       </section>
       <section>
         <h1>Still have questions?</h1>

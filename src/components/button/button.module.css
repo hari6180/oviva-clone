@@ -1,9 +1,7 @@
 @value ovivaOrange,ovivaWhite from '../../common/colors.css';
 
 .button {
-  position: relative;
   margin-top: 30px;
-  display: inline-block;
   background: ovivaOrange;
   color: ovivaWhite;
   font-size: 13px;
