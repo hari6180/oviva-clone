@@ -1,3 +1,69 @@
+@value ovivaBgGrey, ovivaWhite from '../../common/colors.css';
+
 .footer {
-  background-color: #7d7f79;
+  width: 100%;
+  padding: 70px 0;
+  background-color: ovivaBgGrey;
+  color: ovivaWhite;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+
+.menu__wrap {
+  display: flex;
+  padding: 0 15px;
+  width: 75%;
+}
+
+.logo__wrap {
+  padding: 0 40px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.menus {
+  display: flex;
+}
+
+.menu {
+  padding: 0 15px;
+}
+
+.title {
+  font-family: "Helvetica Neue Light";
+  font-size: 1.0625em;
+  line-height: 27px;
+  font-weight: 540;
+  margin: 10px 0;
+  height: 55px;
+}
+
+.menu_list {
+  padding: 0;
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 22px;
+  font-family: "Helvetica Neue Light";
+  font-weight: 100;
+}
+
+.link__wrap {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.link {
+  height: 64px;
+  background-position: right;
+  width: 59px;
+  display: inline-block;
+  margin-right: 5px;
 }
