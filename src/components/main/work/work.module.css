@@ -1,0 +1,36 @@
+@value ovivaDarkBlue from '../../../common/colors.css';
+
+.works {
+  display: flex;
+  padding: 60px 0;
+  background-color: #c8eae5;
+}
+
+.wrap_img,
+.wrap_text {
+  width: 50%;
+}
+
+.wrap_img {
+  text-align: center;
+}
+
+.wrap_text {
+  color: ovivaDarkBlue;
+}
+
+.title {
+  font-size: 2.8em;
+  line-height: 1.3em;
+  font-weight: bold;
+  max-width: 600px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.desc {
+  max-width: 90%;
+  font-weight: 100;
+  font-size: 1.125em;
+  margin-top: 0;
+}

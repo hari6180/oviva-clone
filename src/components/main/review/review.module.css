@@ -1,0 +1,40 @@
+@value ovivaGrey, ovivaMint from '../../../common/colors.css';
+
+.review {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.img_wrap {
+  padding-right: 70px;
+}
+
+.img {
+  width: 100%;
+}
+
+.text_wrap {
+  max-width: 600px;
+  padding-top: 130px;
+}
+
+.title {
+  color: ovivaMint;
+  font-size: 2.125em;
+  padding-bottom: 20px;
+  margin: 0 0 10px;
+}
+
+.text {
+  color: ovivaGrey;
+  font-size: 1em;
+  font-weight: 820;
+  line-height: 1.3em;
+}
+
+.bio {
+  color: ovivaGrey;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.3em;
+}

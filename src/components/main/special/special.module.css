@@ -1,0 +1,46 @@
+@value ovivaMint from '../../../common/colors.css';
+
+.special {
+  width: 70%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.title {
+  font-size: 2.8125em;
+  line-height: 1.3em;
+  text-align: center;
+  font-weight: bold;
+  color: ovivaMint;
+  margin: 20px 0 0 0;
+  padding-bottom: 70px;
+}
+
+.img_wrap {
+  display: flex;
+  justify-content: space-center;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.img {
+  max-height: 110px;
+}
+
+.text {
+  font-family: "Helvetica Neue Light";
+  font-size: 1.125em;
+  padding-top: 22px;
+  padding-bottom: 70px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
