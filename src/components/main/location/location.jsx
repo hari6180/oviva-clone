@@ -19,7 +19,7 @@ const Location = (props) => {
           Our programmes are also available for free in 39 NHS regions throughout the UK, eligible
           participants can be referred by their GP and in some areas they can sign up directly.
         </p>
-        <Button />
+        <Button name="Find out if we’re available in your area" />
       </div>
     </section>
   );

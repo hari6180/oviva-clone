@@ -21,7 +21,7 @@ const App = (props) => {
           This blended approach will support you to make manageable changes that can improve your
           health and wellbeing even after the programme has ended.
         </p>
-        <Button />
+        <Button name="How it works" />
       </div>
     </section>
   );

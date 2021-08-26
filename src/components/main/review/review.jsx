@@ -30,7 +30,7 @@ const Review = (props) => {
           spending lots of time sitting down and was on 5 medications a day. He is now
           medications-free and is cycling up to 80 miles a day!
         </p>
-        <Button />
+        <Button name="More stories" />
       </div>
     </section>
   );

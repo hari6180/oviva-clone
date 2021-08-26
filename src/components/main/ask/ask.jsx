@@ -6,7 +6,7 @@ const Ask = (props) => {
   return (
     <section className={ask.ask}>
       <h1 className={ask.title}>Still have questions?</h1>
-      <Button />
+      <Button name="FAQs" />
     </section>
   );
 };

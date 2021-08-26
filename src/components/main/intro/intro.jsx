@@ -12,7 +12,7 @@ const Intro = (props) => {
             We have helped over 100,000 people gain confidence and keep new healthy habits long
             term.
           </p>
-          <Button />
+          <Button name="Discover our programmes" />
         </div>
       </div>
       <img className={intro.img} src="img/home-header.jpg" alt="happy-woman" />
