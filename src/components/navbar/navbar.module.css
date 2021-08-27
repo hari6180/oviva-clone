@@ -1,15 +1,19 @@
-@value ovivaLightGrey,ovivaGrey,ovivaMint from '../../common/colors.css';
+@value ovivaLightGrey,ovivaGrey,ovivaMint,ovivaWhite from '../../common/colors.css';
 
 .nav {
-  max-width: 80%;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   margin: 0 auto;
+  background-color: ovivaWhite;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   padding: 32px 15px 30px 15px;
 }
 
