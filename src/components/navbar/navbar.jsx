@@ -51,6 +51,10 @@ const Navbar = (props) => {
           </label>
           <input className={styles.search_input} type="search" name="s" placeholder="Search" />
         </form>
+        {/* Toggle button */}
+        <button className="navbar__toggle-btn">
+          <i className="fas fa-bars"></i>
+        </button>
       </div>
     </nav>
   );
