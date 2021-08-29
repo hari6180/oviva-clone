@@ -1,4 +1,5 @@
 @value ovivaMint,ovivaWhite from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .intro {
   background-color: ovivaMint;
@@ -15,6 +16,11 @@
 .background {
   padding-left: 20%;
   padding-right: 15%;
+}
+
+.greenTangle {
+  position: absolute;
+  border-top: 800px solid #00b097;
 }
 
 .title {
@@ -34,4 +40,25 @@
 
 .img {
   width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .intro {
+    margin-top: 113px;
+    flex-direction: column-reverse;
+  }
+
+  .background {
+    padding: 0 25px;
+  }
+
+  .title {
+    font-size: 2.25em;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
 }

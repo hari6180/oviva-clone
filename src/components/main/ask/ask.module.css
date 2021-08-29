@@ -1,4 +1,5 @@
 @value ovivaMint from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .ask {
   background-color: #d1ede9;
@@ -13,4 +14,10 @@
   font-weight: bold;
   font-size: 2.5em;
   line-height: 1.3em;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .ask {
+    padding: 30px 48px 60px 48px;
+  }
 }

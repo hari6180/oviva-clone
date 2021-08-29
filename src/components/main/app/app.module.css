@@ -1,4 +1,5 @@
 @value ovivaMint,ovivaWhite from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .app {
   background-color: ovivaMint;
@@ -37,4 +38,21 @@
   font-size: 1.125em;
   margin: 0;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+  }
+
+  .img_wrap {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .text_wrap {
+    width: 100%;
+  }
 }

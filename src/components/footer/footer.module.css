@@ -1,4 +1,5 @@
 @value ovivaBgGrey, ovivaWhite from '../../common/colors.css';
+@value mediaQuerySmall from '../../common/size.css';
 
 .footer {
   width: 100%;
@@ -7,20 +8,20 @@
   color: ovivaWhite;
 }
 
-.footer__wrap {
+.footer_wrap {
   display: flex;
   justify-content: center;
   width: 85%;
   margin: auto;
 }
 
-.menu__wrap {
+.menu_wrap {
   display: flex;
   padding: 0 15px;
   width: 75%;
 }
 
-.logo__wrap {
+.logo_wrap {
   padding: 0 40px;
 }
 
@@ -55,7 +56,7 @@
   font-weight: 100;
 }
 
-.link__wrap {
+.link_wrap {
   width: 25%;
   padding: 0 15px;
 }
@@ -66,4 +67,42 @@
   width: 59px;
   display: inline-block;
   margin-right: 5px;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .footer {
+    padding: 70px 0;
+  }
+
+  .footer_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .menu_wrap {
+    flex-direction: column;
+  }
+
+  .logo_wrap {
+    padding: 0 15px;
+  }
+
+  .menus {
+    flex-direction: column;
+  }
+
+  .title {
+    height: auto;
+  }
+
+  .link_wrap {
+    display: flex;
+    padding: 10px 15px;
+  }
+
+  .top {
+    position: absolute;
+    right: 30px;
+  }
 }

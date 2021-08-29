@@ -4,9 +4,9 @@ import styles from "./footer.module.css";
 const Footer = (props) => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__wrap}>
-        <div className={styles.menu__wrap}>
-          <div className={styles.logo__wrap}>
+      <div className={styles.footer_wrap}>
+        <div className={styles.menu_wrap}>
+          <div className={styles.logo_wrap}>
             <img className={styles.logo} src="img/foot-logo.png" alt="logo" />
           </div>
           <div className={styles.menus}>
@@ -30,7 +30,7 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className={styles.link__wrap}>
+        <div className={styles.link_wrap}>
           <a href="#" className={styles.link}>
             <img className={styles.link_img} src="img/twitter-icon.png" alt="twitter" />
           </a>
@@ -38,7 +38,7 @@ const Footer = (props) => {
             <img className={styles.link_img} src="img/email-icon.png" alt="email" />
           </a>
           <a href="#" className={styles.link}>
-            <img className={styles.link_img} src="img/foot-top.png" alt="top" />
+            <img className={`${styles.link_img} ${styles.top}`} src="img/foot-top.png" alt="top" />
           </a>
         </div>
       </div>

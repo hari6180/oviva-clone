@@ -1,4 +1,5 @@
 @value ovivaGrey,ovivaBgGrey,ovivaMint,ovivaWhite from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .contact {
   background-color: ovivaMint;
@@ -72,4 +73,17 @@
   border: none;
   border-radius: 15px;
   color: ovivaGrey;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 48px 50px 48px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
 }

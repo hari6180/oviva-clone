@@ -1,4 +1,5 @@
 @value ovivaMint from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .special {
   width: 70%;
@@ -43,4 +44,10 @@
   max-width: 300px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .img_wrap {
+    flex-direction: column;
+  }
 }

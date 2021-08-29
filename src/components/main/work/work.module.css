@@ -1,4 +1,5 @@
 @value ovivaDarkBlue from '../../../common/colors.css';
+@value mediaQuerySmall  from '../../../common/size.css';
 
 .works {
   display: flex;
@@ -33,4 +34,17 @@
   font-weight: 100;
   font-size: 1.125em;
   margin-top: 0;
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .works {
+    flex-direction: column;
+    padding: 60px 48px;
+    align-items: center;
+  }
+
+  .wrap_img,
+  .wrap_text {
+    width: 100%;
+  }
 }

@@ -12,6 +12,7 @@
   padding: 20px 44px;
   cursor: pointer;
   border: none;
+  width: fit-content;
 }
 
 .button:hover {

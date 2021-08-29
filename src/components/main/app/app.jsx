@@ -5,7 +5,6 @@ import app from "./app.module.css";
 const App = (props) => {
   return (
     <section className={app.app}>
-      {/* img will be changed! */}
       <div className={app.img_wrap}>
         <img className={app.img} src="img/app-280x536.png" alt="mobile_app" />
       </div>
