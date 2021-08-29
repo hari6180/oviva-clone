@@ -1,5 +1,5 @@
 @value ovivaLightGrey,ovivaGrey,ovivaMint,ovivaWhite from '../../common/colors.css';
-@value mediaQuery from '../../common/size.css';
+@value mediaQueryMedium,mediaQuerySmall  from '../../common/size.css';
 
 .nav {
   position: fixed;
@@ -18,7 +18,7 @@
   padding: 32px 15px 30px 15px;
 }
 
-.logo img {
+.logo_img {
   max-height: 60px;
   max-width: 153px;
 }
@@ -39,17 +39,16 @@
   margin-left: 0.375em;
 }
 
-.menu li a:hover {
+.sub_title:hover {
   color: ovivaMint;
 }
 
-.menu li a:hover .sub_menu {
-  opacity: 100;
-  color: ovivaLightGrey;
+.menu > li:hover .sub_menu {
+  display: block;
 }
 
 .sub_menu {
-  opacity: 0;
+  display: none;
   transform: translate(0, 10px);
   transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
   z-index: 1;
@@ -60,6 +59,7 @@
   text-align: center;
   line-height: 3;
   min-height: auto;
+  color: ovivaLightGrey;
 }
 
 .sub_menu li:hover {
@@ -96,19 +96,57 @@
   display: none;
 }
 
-/* For below 768px screen width */
-@media screen and (max-width: mediaQuery) {
+@media screen and (max-width: mediaQueryMedium) {
+  .container {
+    width: 750px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .menu {
     flex-direction: column;
     display: none;
+    margin: 0;
+    width: 390px;
+    transition: 0;
   }
 
-  .container {
-    width: 750px;
+  .menu.open {
+    display: block;
   }
 
-  .toggle_wrap {
-    display: flex;
+  .menu.close {
+    display: none;
+  }
+
+  .menu > li {
+    display: list-item;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    line-height: 40px;
+    padding: 0 10px;
+    background: transparent;
+    text-align: left;
+    color: #646872;
+    font-size: 0.875em;
+  }
+
+  .sub_menu {
+    position: static;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    z-index: unset;
+    transform: none;
+    transition: none;
+    display: none;
+  }
+
+  .sub_menu li {
+    position: static;
+    z-index: unset;
   }
 
   .toggle_btn {
@@ -118,10 +156,46 @@
     top: 16px;
     right: 16px;
     font-size: 2em;
+    margin-left: 23rem;
   }
 
   .search_box {
     width: 150px;
     margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: mediaQuerySmall) {
+  .container {
+    width: auto;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .logo_img {
+    width: 100%;
+    max-width: 125px;
+  }
+
+  .toggle_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+
+  .toggle_btn {
+    margin: 0;
+  }
+
+  .search_box {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
   }
 }

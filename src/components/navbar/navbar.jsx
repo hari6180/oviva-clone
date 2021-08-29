@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navbar.module.css";
 
 const Navbar = (props) => {
-  // const navbarMenu = document.querySelector(".menu");
+  const [toggle, setToggle] = useState("close");
 
-  // // Navbar toggle button for small screen
-  // const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
-  // navbarToggleBtn.addEventListener("click", () => {
-  //   navbarMenu.classList.toggle("open");
-  // });
+  const handleToggle = (e) => {
+    e.preventDefault();
+    if (toggle === "close") {
+      setToggle("open");
+    } else {
+      setToggle("close");
+    }
+  };
 
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="#">
-            <img alt="logo" src="img/logo-uk_en.png" />
+            <img className={styles.logo_img} alt="logo" src="img/logo-uk_en.png" />
           </a>
         </div>
-        <ul className={styles.menu}>
+        <ul
+          id="menu"
+          className={`${styles.menu} ${toggle === "open" ? styles.open : styles.close}`}
+        >
           <li>
-            <a href="#">
+            <a className={styles.sub_title} href="#">
               About Us<span>▼</span>
             </a>
             <ul className={styles.sub_menu}>
@@ -29,10 +35,12 @@ const Navbar = (props) => {
             </ul>
           </li>
           <li>
-            <a href="#">How it works</a>
+            <a className={styles.sub_title} href="#">
+              How it works
+            </a>
           </li>
           <li>
-            <a href="#">
+            <a className={styles.sub_title} href="#">
               Programmes<span>▼</span>
             </a>
             <ul className={styles.sub_menu}>
@@ -47,29 +55,28 @@ const Navbar = (props) => {
             </ul>
           </li>
           <li>
-            <a href="#">NHS & Partnerships</a>
+            <a className={styles.sub_title} href="#">
+              NHS & Partnerships
+            </a>
           </li>
           <li>
-            <a href="#">Contact </a>
+            <a className={styles.sub_title} href="#">
+              Contact{" "}
+            </a>
           </li>
         </ul>
         {/* Toggle button */}
         <div className={styles.toggle_wrap}>
-          <button className={styles.toggle_btn}>
+          <button id="toggle_btn" className={styles.toggle_btn} onClick={handleToggle}>
             <i className="fas fa-bars"></i>
           </button>
-          <form
-            className={styles.search_box}
-            role="search"
-            method="get"
-            action="https://oviva.com/"
-          >
-            <label className="screen-reader-text" htmlFor="s">
-              <img className={styles.search_icon} src="/img/search-new.png" alt="search_icon" />
-            </label>
-            <input className={styles.search_input} type="search" name="s" placeholder="Search" />
-          </form>
         </div>
+        <form className={styles.search_box} role="search" method="get" action="https://oviva.com/">
+          <label className="screen-reader-text" htmlFor="s">
+            <img className={styles.search_icon} src="/img/search-new.png" alt="search_icon" />
+          </label>
+          <input className={styles.search_input} type="search" name="s" placeholder="Search" />
+        </form>
       </div>
     </nav>
   );
