@@ -92,26 +92,36 @@
   color: ovivaLightGrey;
 }
 
+.toggle_btn {
+  display: none;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: mediaQuery) {
-  :root {
-    /* Font size */
-    --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
-  }
-
-  .navbar__toggle-btn {
-    display: block;
-    top: 16px;
-    right: 16px;
-    font-size: var(--font-medium);
-  }
-
   .menu {
     flex-direction: column;
     display: none;
+  }
+
+  .container {
+    width: 750px;
+  }
+
+  .toggle_wrap {
+    display: flex;
+  }
+
+  .toggle_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    top: 16px;
+    right: 16px;
+    font-size: 2em;
+  }
+
+  .search_box {
+    width: 150px;
+    margin: 0 15px;
   }
 }

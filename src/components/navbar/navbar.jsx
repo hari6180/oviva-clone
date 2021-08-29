@@ -2,6 +2,14 @@ import React from "react";
 import styles from "./navbar.module.css";
 
 const Navbar = (props) => {
+  // const navbarMenu = document.querySelector(".menu");
+
+  // // Navbar toggle button for small screen
+  // const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+  // navbarToggleBtn.addEventListener("click", () => {
+  //   navbarMenu.classList.toggle("open");
+  // });
+
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
@@ -45,16 +53,23 @@ const Navbar = (props) => {
             <a href="#">Contact </a>
           </li>
         </ul>
-        <form className={styles.search_box} role="search" method="get" action="https://oviva.com/">
-          <label className="screen-reader-text" htmlFor="s">
-            <img className={styles.search_icon} src="/img/search-new.png" alt="search_icon" />
-          </label>
-          <input className={styles.search_input} type="search" name="s" placeholder="Search" />
-        </form>
         {/* Toggle button */}
-        <button className="navbar__toggle-btn">
-          <i className="fas fa-bars"></i>
-        </button>
+        <div className={styles.toggle_wrap}>
+          <button className={styles.toggle_btn}>
+            <i className="fas fa-bars"></i>
+          </button>
+          <form
+            className={styles.search_box}
+            role="search"
+            method="get"
+            action="https://oviva.com/"
+          >
+            <label className="screen-reader-text" htmlFor="s">
+              <img className={styles.search_icon} src="/img/search-new.png" alt="search_icon" />
+            </label>
+            <input className={styles.search_input} type="search" name="s" placeholder="Search" />
+          </form>
+        </div>
       </div>
     </nav>
   );
