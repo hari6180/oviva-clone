@@ -15,7 +15,7 @@ const Intro = (props) => {
           <Button name="Discover our programmes" />
         </div>
       </div>
-      <img className={intro.img} src="img/home-header.jpg" alt="happy-woman" />
+      <img className={intro.img} src="img/home-header.png" alt="happy-woman" />
     </section>
   );
 };

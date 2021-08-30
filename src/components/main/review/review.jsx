@@ -6,7 +6,7 @@ const Review = (props) => {
   return (
     <section className={review.review}>
       <div className={review.img_wrap}>
-        <img className={review.img} src="img/clive.jpg" alt="client" />
+        <img className={review.img} src="img/clive.png" alt="client" />
       </div>
       <div className={review.text_wrap}>
         <h2 className={review.title}>Clive's story</h2>
