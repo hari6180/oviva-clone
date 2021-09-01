@@ -1,5 +1,5 @@
 # Oviva clone coding
-Oviva's website built with React(customer's pictures were painted by me)
+Oviva's website built with React(customer's pictures were painted by me 😉)
 
 https://oviva.netlify.app/
 
